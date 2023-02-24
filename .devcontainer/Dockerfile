@@ -1,3 +1,2 @@
 FROM "mcr.microsoft.com/devcontainers/base:jammy"
-RUN apt update
-RUN sudo apt-get install libxml2-utils
+RUN sudo  apt update && sudo apt-get install -y libxml2-utils
