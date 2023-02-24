@@ -3,12 +3,11 @@
 {
 	"name": "Ubuntu",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	{
-		"build": {
-			// Path is relataive to the devcontainer.json file.
-			"dockerfile": "Dockerfile"
-		}
-	},
+	"build": {
+		// Path is relataive to the devcontainer.json file.
+		"dockerfile": "Dockerfile"
+	}
+	,
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {
 			"ppa": true,
