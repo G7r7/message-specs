@@ -1,4 +1,5 @@
-<?xml-model href="schemas/kernel.xsd"?>
+<?xml-model href="schemas/kernel/message.xsd"?>
+
 <msg>
   <header>
     <from>Michel</from>

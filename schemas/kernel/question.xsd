@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="textinput.xsd" />
+    <xsd:include schemaLocation="checkbox.xsd" />
+    <xsd:include schemaLocation="radio.xsd" />
+    <xsd:element name="question">
+        <xsd:complexType>
+            <xsd:choice minOccurs="1" maxOccurs="unbounded">
+                <xsd:element ref="textinput"/>
+                <xsd:element ref="checkbox"/>
+                <xsd:element ref="radio"/>
+            </xsd:choice>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

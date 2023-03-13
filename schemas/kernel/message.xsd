@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:include schemaLocation="form.xsd"/>
+<xsd:include schemaLocation="text.xsd"/>
+  <xsd:element name="msg">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="header">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="from" type="xsd:string"/>
+              <xsd:element name="to" type="xsd:string"/>
+              <xsd:element name="date" type="xsd:date"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element ref="text"/>
+        <xsd:choice minOccurs="0" maxOccurs="unbounded">
+          <xsd:element ref="form" />
+        </xsd:choice>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

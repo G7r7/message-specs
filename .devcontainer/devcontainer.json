@@ -18,7 +18,8 @@
 		"vscode": {
 			"extensions": [
 				"eamodio.gitlens",
-				"mhutchie.git-graph"
+				"mhutchie.git-graph",
+				"redhat.vscode-xml"
 			]
 		}
 	}
