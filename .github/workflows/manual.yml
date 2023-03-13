@@ -1,0 +1,24 @@
+# This is a basic workflow that is manually triggered
+
+name: Lint
+
+on:
+  push:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout (GitHub)
+      uses: actions/checkout@v3
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v2 
+      with:
+        registry: ghcr.io
+        username: ${{ github.repository_owner }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+    - name: devcontainers-ci
+      uses: devcontainers/ci@v0.2.1900000118
+      with:
+        imageName: "github.com/G7r7/message-specs/xmllint"
+        runCmd: "sudo chmod +x ./lint.sh && ./lint.sh"
