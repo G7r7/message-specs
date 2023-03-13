@@ -13,8 +13,10 @@
         </xsd:complexType>
       </xsd:element>
       <xsd:element name="text" type="xsd:string"/>
+      <xsd:element name="checkbox">
+        <xsd:attribute name="text" use="required" type="xsd:string"/>
+      </xsd:element>
     </xsd:sequence>
-    <xsd:attribute name="id" use="required" type="xsd:ID"/>
   </xsd:complexType>
   </xsd:element>
 </xsd:schema>
