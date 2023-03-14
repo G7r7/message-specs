@@ -18,7 +18,6 @@ jobs:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: devcontainers-ci
-      uses: devcontainers/ci@v0.2.1900000118
+      uses: devcontainers/ci@v0.3
       with:
-        imageName: "github.com/g7r7/message-specs/xmllint"
         runCmd: "sudo chmod +x ./lint.sh && ./lint.sh"
