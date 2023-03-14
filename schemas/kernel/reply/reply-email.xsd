@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="email-regex.xsd" />
+    <xsd:element name="reply-email">
+        <xsd:complexType>
+            <xsd:attribute name="value" use="required" type="email-regex"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

@@ -1,4 +1,4 @@
-<?xml-model href="../../schemas/kernel/message.xsd"?>
+<?xml-model href="../../schemas/kernel/core/message.xsd"?>
 <msg version="0.1.0">
   <header>
     <from>Michel</from>
@@ -31,6 +31,24 @@
       </question>
       <question id="5" text="On fait quoi après ?">
         <text-input label="nom de l'activité"/>
+      </question>
+    </form>
+
+    <form id="2" title="Info">
+      <question id="6" text="Nom">
+        <text-input />
+      </question>
+       <question id="7" text="Telephone number">
+        <phone-number-input/>
+      </question>
+      <question id="8" text="Envoi to mail stp">
+        <email-input label="email:"/>
+      </question>
+      <question id="9" text="age">
+        <integer-input />
+      </question>
+      <question id="10" text="Height">
+        <decimal-input label="(cm)"/>
       </question>
     </form>
     <text>À bientôt</text>
