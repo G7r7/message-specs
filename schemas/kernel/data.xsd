@@ -13,5 +13,23 @@
                 <xsd:element ref="text"/>
             </xsd:choice>
         </xsd:complexType>
+
+        <!-- You can't have multiple replies to the same question-->
+        <xsd:unique name="unique-reply-id">
+            <xsd:selector xpath="reply"/>
+            <xsd:field xpath="@question-id"/>
+        </xsd:unique>
+
+        <!-- You can't have multiple questions with the same id-->
+        <xsd:unique name="unique-question-id">
+            <xsd:selector xpath="question"/>
+            <xsd:field xpath="@id"/>
+        </xsd:unique>
+
+        <!-- You can't have multiple forms with the same id-->
+        <xsd:unique name="unique-from-id">
+            <xsd:selector xpath="form"/>
+            <xsd:field xpath="@id"/>
+        </xsd:unique>
     </xsd:element>
 </xsd:schema>
