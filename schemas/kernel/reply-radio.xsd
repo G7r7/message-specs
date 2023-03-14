@@ -2,7 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:element name="reply-radio">
         <xsd:complexType>
-            <xsd:attribute name="offset" use="required"/>
+            <xsd:attribute name="offset" use="required" type="xsd:unsignedLong"/>
         </xsd:complexType>
     </xsd:element>
 </xsd:schema>

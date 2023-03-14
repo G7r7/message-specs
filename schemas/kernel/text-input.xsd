@@ -2,7 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:element name="text-input">
         <xsd:complexType>
-            <xsd:attribute name="label"/>
+            <xsd:attribute name="label" type="xsd:string"/>
         </xsd:complexType>
     </xsd:element>
 </xsd:schema>

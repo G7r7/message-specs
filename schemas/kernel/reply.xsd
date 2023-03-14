@@ -14,7 +14,7 @@
                 <xsd:element ref="reply-date" />
                 <xsd:element ref="text" />
             </xsd:choice>
-            <xsd:attribute name="question-id" use="required"/>
+            <xsd:attribute name="question-id" use="required" type="xsd:string"/>
         </xsd:complexType>
     </xsd:element>
 </xsd:schema>

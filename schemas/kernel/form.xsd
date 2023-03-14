@@ -9,8 +9,8 @@
                 <xsd:element ref="text"/>
                 <xsd:element ref="form"/>
             </xsd:choice>
-            <xsd:attribute name="id" use="required"/>
-            <xsd:attribute name="title"/>
+            <xsd:attribute name="id" use="required" type="xsd:string"/>
+            <xsd:attribute name="title" type="xsd:string"/>
         </xsd:complexType>
     </xsd:element>
 </xsd:schema>
