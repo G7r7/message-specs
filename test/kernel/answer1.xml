@@ -7,22 +7,22 @@
   </header>
   <data>
     <text>Camarade RULLIER est un espion du KGB, ne répond pas avec ce protocole insecure</text>
-    <reply question-id="0001">
+    <reply question-id="1">
       <!-- On a coché la première case (ici oui j'ai bien reçue ...) -->
       <reply-checkbox>
         <checked-box offset="0"/>
       </reply-checkbox>
     </reply>
-    <reply question-id="0002">
+    <reply question-id="2">
       <reply-radio offset="2"/>
     </reply>
     <reply question-id="001/003">
       <reply-date value="2023-03-13"/>
     </reply>
-    <reply question-id="0001/0004">
+    <reply question-id="1/4">
       <reply-color r="255" g="121" b="32" a="255"/>
     </reply>
-    <reply question-id="0001/0005">
+    <reply question-id="1/5">
       <text>Piscine</text>
     </reply>
   </data>
