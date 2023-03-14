@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="../question/checkbox-group.xsd" />
+    <xsd:include schemaLocation="../question/colorpicker.xsd" />
+    <xsd:include schemaLocation="../question/radio-group.xsd" />
+    <xsd:include schemaLocation="../question/datepicker.xsd" />
+    <xsd:include schemaLocation="../question/text-input.xsd" />
+    <xsd:include schemaLocation="../question/email-input.xsd" />
+    <xsd:include schemaLocation="../question/phone-number-input.xsd" />
+    <xsd:include schemaLocation="../question/integer-input.xsd" />
+    <xsd:include schemaLocation="../question/decimal-input.xsd" />
+    <xsd:element name="question">
+        <xsd:complexType>
+            <xsd:choice minOccurs="1" maxOccurs="1">
+                <xsd:element ref="checkbox-group"/>
+                <xsd:element ref="colorpicker"/>
+                <xsd:element ref="radio-group"/>
+                <xsd:element ref="datepicker"/>
+                <xsd:element ref="text-input"/>
+                <xsd:element ref="email-input"/>
+                <xsd:element ref="phone-number-input"/>
+                <xsd:element ref="decimal-input"/>   
+                <xsd:element ref="integer-input"/>
+            </xsd:choice>
+            <xsd:attribute name="id" use="required" type="xsd:string"/>
+            <xsd:attribute name="text" use="required" type="xsd:string"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

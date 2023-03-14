@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="phone-number-regex.xsd" />
+    <xsd:element name="reply-phone-number">
+        <xsd:complexType>
+            <xsd:attribute name="value" use="required" type="phone-number-regex"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

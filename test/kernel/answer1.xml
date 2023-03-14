@@ -1,4 +1,4 @@
-<?xml-model href="../../schemas/kernel/message.xsd"?>
+<?xml-model href="../../schemas/kernel/core/message.xsd"?>
 <msg version="0.1.0">
   <header>
     <from>Roger</from>
@@ -23,7 +23,23 @@
       <reply-color r="255" g="121" b="32" a="255"/>
     </reply>
     <reply question-id="1/5">
-      <text>Piscine</text>
+      <reply-text value="Piscine"/>
+    </reply>
+
+    <reply question-id="2/6">
+      <reply-text value="Roger"/>
+    </reply>
+    <reply question-id="2/7">
+      <reply-phone-number value ="+330606060606"/>
+    </reply>
+    <reply question-id="2/8">
+      <reply-email value="roger@mon-mail.com"/>
+    </reply>
+    <reply question-id="2/9">
+      <reply-integer value="77"/>
+    </reply>
+        <reply question-id="2/10">
+      <reply-decimal value="1.76"/>
     </reply>
   </data>
 </msg>

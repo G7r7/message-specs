@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="../reply/reply-checkbox.xsd"/>
+    <xsd:include schemaLocation="../reply/reply-radio.xsd"/>
+    <xsd:include schemaLocation="../reply/reply-color.xsd"/>
+    <xsd:include schemaLocation="../reply/reply-date.xsd"/>
+    <xsd:include schemaLocation="../reply/reply-email.xsd"/>
+    <xsd:include schemaLocation="../reply/reply-phone-number.xsd"/>
+    <xsd:include schemaLocation="../reply/reply-decimal.xsd"/>
+    <xsd:include schemaLocation="../reply/reply-integer.xsd"/>
+    <xsd:include schemaLocation="../reply/reply-text.xsd"/>
+    <xsd:element name="reply">
+        <xsd:complexType>
+            <xsd:choice minOccurs="1" maxOccurs="1">
+                <xsd:element ref="reply-checkbox" />
+                <xsd:element ref="reply-radio" />
+                <xsd:element ref="reply-color" />
+                <xsd:element ref="reply-date" />
+                <xsd:element ref="reply-text" />
+                <xsd:element ref="reply-email" />
+                <xsd:element ref="reply-phone-number" />
+                <xsd:element ref="reply-decimal" />
+                <xsd:element ref="reply-integer" />
+            </xsd:choice>
+            <xsd:attribute name="question-id" use="required" type="xsd:string"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
