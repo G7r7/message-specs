@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="reply-checkbox">
+        <xsd:complexType>
+            <xsd:choice minOccurs="0" maxOccurs="unbounded">
+                <xsd:element name="checked-box">
+                    <xsd:complexType>
+                        <xsd:attribute name="offset" use="required"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:choice>
+        </xsd:complexType>
+        <!-- You can't have the same offset value more than once -->
+        <xsd:unique name="unique-offset">
+            <xsd:selector xpath="checked-box"/>
+            <xsd:field xpath="@offset"/>
+        </xsd:unique>
+    </xsd:element>
+</xsd:schema>

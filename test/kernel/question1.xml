@@ -1,0 +1,38 @@
+<?xml-model href="../../schemas/kernel/message.xsd"?>
+<msg>
+  <header>
+    <from>Michel</from>
+    <to>Roger</to>
+    <date>1970-01-01</date>
+  </header>
+  <data>
+    <text>Bonjour Roger</text>
+    <question id="0001" text="As-tu reçu ma lettre ?">
+      <checkbox-group>
+        <checkbox label="Oui je l'ai bien reçue"/>
+      </checkbox-group>
+    </question>
+    <question id="0002" text="Que dois-je apporter pour le pique-nique de jeudi ?">
+      <radio-group>
+        <radio label="Boissons"/>
+        <radio label="Fruits"/>
+        <radio label="Chips"/>
+      </radio-group>
+    </question>
+    <!-- Formulaires: optionnels et nested -->
+    <form id="0001" title="Petanque">
+      <!-- On peut mettre des champs textes n'importe où dans les forms -->
+      <text>Petite pétanque dans les jours à venir ?</text>
+      <question id="0003" text="Quand es-tu dispo pour aller jouer ?">
+        <datepicker/>
+      </question>
+      <question id="0004" text="De quelle couleur sont tes boules ?">
+        <colorpicker/>
+      </question>
+      <question id="0005" text="On fait quoi après ?">
+        <text-input label="nom de l'activité"/>
+      </question>
+    </form>
+    <text>À bientôt</text>
+  </data>
+</msg>
