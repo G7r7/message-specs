@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<xsd:include schemaLocation="version.xsd"/>
 <xsd:include schemaLocation="data.xsd"/>
   <xsd:element name="msg">
     <xsd:complexType>
@@ -15,6 +16,7 @@
         </xsd:element>
         <xsd:element ref="data"/>
       </xsd:sequence>
+      <xsd:attribute ref="version" use="required"/>
     </xsd:complexType>
   </xsd:element>
 </xsd:schema>
