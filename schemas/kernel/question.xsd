@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-    <xsd:include schemaLocation="textinput.xsd" />
-    <xsd:include schemaLocation="checkbox.xsd" />
-    <xsd:include schemaLocation="radio.xsd" />
+    <xsd:include schemaLocation="checkbox-group.xsd" />
+    <xsd:include schemaLocation="colorpicker.xsd" />
+    <xsd:include schemaLocation="radio-group.xsd" />
+    <xsd:include schemaLocation="datepicker.xsd" />
+    <xsd:include schemaLocation="text-input.xsd" />
     <xsd:element name="question">
         <xsd:complexType>
-            <xsd:choice minOccurs="1" maxOccurs="unbounded">
-                <xsd:element ref="textinput"/>
-                <xsd:element ref="checkbox"/>
-                <xsd:element ref="radio"/>
+            <xsd:choice minOccurs="1" maxOccurs="1">
+                <xsd:element ref="checkbox-group"/>
+                <xsd:element ref="colorpicker"/>
+                <xsd:element ref="radio-group"/>
+                <xsd:element ref="datepicker"/>
+                <xsd:element ref="text-input"/>
             </xsd:choice>
+            <xsd:attribute name="id" use="required"/>
+            <xsd:attribute name="text" use="required"/>
         </xsd:complexType>
     </xsd:element>
 </xsd:schema>

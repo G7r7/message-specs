@@ -1,0 +1,29 @@
+<?xml-model href="../../schemas/kernel/message.xsd"?>
+<msg>
+  <header>
+    <from>Roger</from>
+    <to>Michel</to>
+    <date>1970-01-01</date>
+  </header>
+  <data>
+    <text>Camarade RULLIER est un espion du KGB, ne répond pas avec ce protocole insecure</text>
+    <reply question-id="0001">
+      <!-- On a coché la première case (ici oui j'ai bien reçue ...) -->
+      <reply-checkbox>
+        <checked-box offset="0"/>
+      </reply-checkbox>
+    </reply>
+    <reply question-id="0002">
+      <reply-radio offset="2"/>
+    </reply>
+    <reply question-id="001/003">
+      <reply-date value="2023-03-13"/>
+    </reply>
+    <reply question-id="0001/0004">
+      <reply-color r="255" g="121" b="32" a="255"/>
+    </reply>
+    <reply question-id="0001/0005">
+      <text>Piscine</text>
+    </reply>
+  </data>
+</msg>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="reply-color">
+        <xsd:complexType>
+            <xsd:attribute name="r" use="required" type="xsd:unsignedByte"/>
+            <xsd:attribute name="g" use="required" type="xsd:unsignedByte"/>
+            <xsd:attribute name="b" use="required" type="xsd:unsignedByte"/>
+            <xsd:attribute name="a" use="required" type="xsd:unsignedByte"/>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

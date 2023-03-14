@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:include schemaLocation="question.xsd"/>
-    <xsd:include schemaLocation="text.xsd"/>
+    <xsd:include schemaLocation="reply.xsd"/>
     <xsd:include schemaLocation="form.xsd"/>
-    <xsd:element name="form">
+    <xsd:include schemaLocation="text.xsd"/>
+    <xsd:element name="data">
         <xsd:complexType>
-            <xsd:choice minOccurs="1" maxOccurs="unbounded">
+            <xsd:choice minOccurs="0" maxOccurs="unbounded">
                 <xsd:element ref="question"/>
-                <xsd:element ref="text"/>
+                <xsd:element ref="reply"/>
                 <xsd:element ref="form"/>
+                <xsd:element ref="text"/>
             </xsd:choice>
-            <xsd:attribute name="id" use="required"/>
-            <xsd:attribute name="title"/>
         </xsd:complexType>
     </xsd:element>
 </xsd:schema>
