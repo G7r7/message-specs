@@ -2,6 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
     <xsd:include schemaLocation="question.xsd"/>
     <xsd:include schemaLocation="text.xsd"/>
+    <xsd:include schemaLocation="namespace-regex.xsd"/>
     <xsd:element name="form">
         <xsd:complexType>
             <xsd:choice minOccurs="1" maxOccurs="unbounded">
@@ -9,7 +10,7 @@
                 <xsd:element ref="text"/>
                 <xsd:element ref="form"/>
             </xsd:choice>
-            <xsd:attribute name="id" use="required" type="xsd:string"/>
+            <xsd:attribute name="id" use="required" type="namespace"/>
             <xsd:attribute name="title" type="xsd:string"/>
         </xsd:complexType>
     </xsd:element>

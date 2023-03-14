@@ -5,6 +5,7 @@
     <xsd:include schemaLocation="radio-group.xsd" />
     <xsd:include schemaLocation="datepicker.xsd" />
     <xsd:include schemaLocation="text-input.xsd" />
+    <xsd:include schemaLocation="namespace-regex.xsd" />
     <xsd:element name="question">
         <xsd:complexType>
             <xsd:choice minOccurs="1" maxOccurs="1">
@@ -14,7 +15,7 @@
                 <xsd:element ref="datepicker"/>
                 <xsd:element ref="text-input"/>
             </xsd:choice>
-            <xsd:attribute name="id" use="required" type="xsd:string"/>
+            <xsd:attribute name="id" use="required" type="namespace"/>
             <xsd:attribute name="text" use="required" type="xsd:string"/>
         </xsd:complexType>
     </xsd:element>
