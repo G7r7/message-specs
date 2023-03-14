@@ -16,6 +16,5 @@
         <xsd:element ref="data"/>
       </xsd:sequence>
     </xsd:complexType>
-
   </xsd:element>
 </xsd:schema>
