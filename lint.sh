@@ -1,2 +1,3 @@
 #!/bin/bash
-xmllint schemas/*
+xmllint schemas/kernel/*
+xmllint test/kernel/*
