@@ -7,12 +7,12 @@
   </header>
   <data>
     <text>Bonjour Roger</text>
-    <question id="0001" text="As-tu reçu ma lettre ?">
+    <question id="1" text="As-tu reçu ma lettre ?">
       <checkbox-group>
         <checkbox label="Oui je l'ai bien reçue"/>
       </checkbox-group>
     </question>
-    <question id="0002" text="Que dois-je apporter pour le pique-nique de jeudi ?">
+    <question id="2" text="Que dois-je apporter pour le pique-nique de jeudi ?">
       <radio-group>
         <radio label="Boissons"/>
         <radio label="Fruits"/>
@@ -20,16 +20,16 @@
       </radio-group>
     </question>
     <!-- Formulaires: optionnels et nested -->
-    <form id="0001" title="Petanque">
+    <form id="1" title="Petanque">
       <!-- On peut mettre des champs textes n'importe où dans les forms -->
       <text>Petite pétanque dans les jours à venir ?</text>
-      <question id="0003" text="Quand es-tu dispo pour aller jouer ?">
+      <question id="3" text="Quand es-tu dispo pour aller jouer ?">
         <datepicker/>
       </question>
-      <question id="0004" text="De quelle couleur sont tes boules ?">
+      <question id="4" text="De quelle couleur sont tes boules ?">
         <colorpicker/>
       </question>
-      <question id="0005" text="On fait quoi après ?">
+      <question id="5" text="On fait quoi après ?">
         <text-input label="nom de l'activité"/>
       </question>
     </form>
