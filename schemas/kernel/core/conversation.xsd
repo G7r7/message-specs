@@ -2,7 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 <xsd:include schemaLocation="version.xsd"/>
 <xsd:include schemaLocation="message.xsd"/>
-<xsd:include schemaLocation="namespace-regex.xsd"/>
+<xsd:include schemaLocation="../namespace-regex.xsd"/>
   <xsd:element name="conv">
     <xsd:complexType>
       <xsd:sequence>
