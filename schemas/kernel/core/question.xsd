@@ -9,6 +9,7 @@
     <xsd:include schemaLocation="../question/phone-number-input.xsd" />
     <xsd:include schemaLocation="../question/integer-input.xsd" />
     <xsd:include schemaLocation="../question/decimal-input.xsd" />
+    <xsd:include schemaLocation="../namespace-regex.xsd"/>
     <xsd:element name="question">
         <xsd:complexType>
             <xsd:choice minOccurs="1" maxOccurs="1">
@@ -22,7 +23,7 @@
                 <xsd:element ref="decimal-input"/>   
                 <xsd:element ref="integer-input"/>
             </xsd:choice>
-            <xsd:attribute name="id" use="required" type="xsd:string"/>
+            <xsd:attribute name="id" use="required" type="namespace"/>
             <xsd:attribute name="text" use="required" type="xsd:string"/>
         </xsd:complexType>
     </xsd:element>
