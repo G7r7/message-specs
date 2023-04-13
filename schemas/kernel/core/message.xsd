@@ -2,6 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 <xsd:include schemaLocation="version.xsd"/>
 <xsd:include schemaLocation="data.xsd"/>
+<xsd:include schemaLocation="namespace-regex.xsd"/>
   <xsd:element name="msg">
     <xsd:complexType>
       <xsd:sequence>
@@ -17,6 +18,7 @@
         <xsd:element ref="data"/>
       </xsd:sequence>
       <xsd:attribute ref="version" use="required"/>
+      <xsd:attribute name="conv-id" use="required" type="namespace"/>
     </xsd:complexType>
   </xsd:element>
 </xsd:schema>

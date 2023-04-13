@@ -1,56 +1,57 @@
-<?xml-model href="../../schemas/kernel/core/message.xsd"?>
-<msg version="0.2.0">
-  <header>
-    <from>Michel</from>
-    <to>Roger</to>
-    <date>1970-01-01</date>
-  </header>
-  <data>
-    <text>Bonjour Roger</text>
-    <question id="1" text="As-tu reçu ma lettre ?">
-      <checkbox-group>
-        <checkbox label="Oui je l'ai bien reçue"/>
-      </checkbox-group>
-    </question>
-    <question id="2" text="Que dois-je apporter pour le pique-nique de jeudi ?">
-      <radio-group>
-        <radio label="Boissons"/>
-        <radio label="Fruits"/>
-        <radio label="Chips"/>
-      </radio-group>
-    </question>
-    <!-- Formulaires: optionnels et nested -->
-    <form id="1" title="Petanque">
-      <!-- On peut mettre des champs textes n'importe où dans les forms -->
-      <text>Petite pétanque dans les jours à venir ?</text>
-      <question id="3" text="Quand es-tu dispo pour aller jouer ?">
-        <datepicker/>
+<conv id="001" version="0.3.0">
+  <msg version="0.3.0">
+    <header>
+      <from>Michel</from>
+      <to>Roger</to>
+      <date>1970-01-01</date>
+    </header>
+    <data>
+      <text>Bonjour Roger</text>
+      <question id="1" text="As-tu reçu ma lettre ?">
+        <checkbox-group>
+          <checkbox label="Oui je l'ai bien reçue"/>
+        </checkbox-group>
       </question>
-      <question id="4" text="De quelle couleur sont tes boules ?">
-        <colorpicker/>
+      <question id="2" text="Que dois-je apporter pour le pique-nique de jeudi ?">
+        <radio-group>
+          <radio label="Boissons"/>
+          <radio label="Fruits"/>
+          <radio label="Chips"/>
+        </radio-group>
       </question>
-      <question id="5" text="On fait quoi après ?">
-        <text-input label="nom de l'activité"/>
-      </question>
-    </form>
-
-    <form id="2" title="Info">
-      <question id="6" text="Nom">
-        <text-input />
-      </question>
-       <question id="7" text="Telephone number">
-        <phone-number-input/>
-      </question>
-      <question id="8" text="Envoi to mail stp">
-        <email-input label="email:"/>
-      </question>
-      <question id="9" text="age">
-        <integer-input />
-      </question>
-      <question id="10" text="Height">
-        <decimal-input label="(cm)"/>
-      </question>
-    </form>
-    <text>À bientôt</text>
-  </data>
-</msg>
+      <!-- Formulaires: optionnels et nested -->
+      <form id="1" title="Petanque">
+        <!-- On peut mettre des champs textes n'importe où dans les forms -->
+        <text>Petite pétanque dans les jours à venir ?</text>
+        <question id="3" text="Quand es-tu dispo pour aller jouer ?">
+          <datepicker/>
+        </question>
+        <question id="4" text="De quelle couleur sont tes boules ?">
+          <colorpicker/>
+        </question>
+        <question id="5" text="On fait quoi après ?">
+          <text-input label="nom de l'activité"/>
+        </question>
+      </form>
+ 
+      <form id="2" title="Info">
+        <question id="6" text="Nom">
+          <text-input />
+        </question>
+         <question id="7" text="Telephone number">
+          <phone-number-input/>
+        </question>
+        <question id="8" text="Envoi to mail stp">
+          <email-input label="email:"/>
+        </question>
+        <question id="9" text="age">
+          <integer-input />
+        </question>
+        <question id="10" text="Height">
+          <decimal-input label="(cm)"/>
+        </question>
+      </form>
+      <text>À bientôt</text>
+    </data>
+  </msg>
+</conv>
