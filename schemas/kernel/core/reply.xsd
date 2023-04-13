@@ -9,6 +9,7 @@
     <xsd:include schemaLocation="../reply/reply-decimal.xsd"/>
     <xsd:include schemaLocation="../reply/reply-integer.xsd"/>
     <xsd:include schemaLocation="../reply/reply-text.xsd"/>
+    <xsd:include schemaLocation="../namespace-regex.xsd"/>
     <xsd:element name="reply">
         <xsd:complexType>
             <xsd:choice minOccurs="1" maxOccurs="1">
@@ -22,7 +23,7 @@
                 <xsd:element ref="reply-decimal" />
                 <xsd:element ref="reply-integer" />
             </xsd:choice>
-            <xsd:attribute name="question-id" use="required" type="xsd:string"/>
+            <xsd:attribute name="question-id" use="required" type="namespace"/>
         </xsd:complexType>
     </xsd:element>
 </xsd:schema>
