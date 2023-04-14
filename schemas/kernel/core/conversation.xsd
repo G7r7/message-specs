@@ -4,7 +4,7 @@
 <xsd:include schemaLocation="message.xsd"/>
   <xsd:element name="conv">
     <xsd:complexType>
-      <xsd:sequence>
+      <xsd:sequence minOccurs="0" maxOccurs="unbounded">
         <xsd:element ref="msg"/>
       </xsd:sequence>
       <xsd:attribute ref="version" use="required"/>
